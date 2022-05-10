@@ -1,8 +1,9 @@
-'use strict';
-const $ = require('jquery');
-import './header.css';
+// interesting jquery import thanks to babel
+import $ from "jquery";
+// styles
+import "./header.css";
 
-$('body').append('<header></header>');
-$('header').append('<div id="logo"></div>', '<h1>Holberton Dashboard</h1>');
-
-console.log('Init header');
+// append elements
+$("body").append(`<div id="logo"></div>`);
+$("body").append(`<p>Holberton Dashboard</p>`);
+console.log("Init header");
